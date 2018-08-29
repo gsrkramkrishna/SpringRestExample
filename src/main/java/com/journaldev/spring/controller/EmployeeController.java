@@ -66,7 +66,7 @@ public class EmployeeController {
 	
 	@RequestMapping(value = EmpRestURIConstants.CREATE_EMP, method = RequestMethod.POST)
 	public @ResponseBody Employee createEmployee(@RequestBody Employee emp) {
-		logger.info("Start createEmployee.");
+		logger.info("Start createEmployee...");
 		emp.setCreatedDate(new Date());
 		empData.put(emp.getId(), emp);
 		return emp;
