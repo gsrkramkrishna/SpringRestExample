@@ -48,7 +48,7 @@ public class EmployeeController {
 	
 	@RequestMapping(value = EmpRestURIConstants.GET_EMP, method = RequestMethod.GET)
 	public @ResponseBody Employee getEmployee(@PathVariable("id") int empId) {
-		logger.info("Start getEmployee. ID="+empId);
+		logger.info("Start getEmployee... ID="+empId);
 		
 		return empData.get(empId);
 	}
