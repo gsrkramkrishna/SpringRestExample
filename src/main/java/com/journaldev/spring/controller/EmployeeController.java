@@ -31,7 +31,7 @@ public class EmployeeController {
 	
 	@RequestMapping(value = EmpRestURIConstants.DUMMY_EMP, method = RequestMethod.GET)
 	public @ResponseBody Employee getDummyEmployee() {
-		logger.info("Start getDummyEmployee...");
+		logger.info("Start getDummyEmployee....");
 		Employee emp = new Employee();
 		emp.setId(9999);
 		emp.setName("Dummy");
